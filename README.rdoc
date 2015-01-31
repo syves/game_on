@@ -1,28 +1,18 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+GameOn.
 
-Things you may want to cover:
+mvp:
+-A user can login with a secure password
+-A user can create an account
+- A user can add a board game.
+-A board game has characteristics which are booleans. ex: Has_bluffing; true.
+-A user can save their board game preferences.
+-All users can see other user's preferences.
+-A user can get a list of suggested games, based on their preferences
+-A user can see all the games in the system
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Stretch:
+-User can see their preferences and edit them
+-A user can search for suggestions based on all the users attending a gaming event
+-A search result can be saved?
