@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @game.name %>
+</p>
+
+<p>
+  <strong>Player interaction:</strong>
+  <%= @game.player_interaction %>
+</p>
+
+<p>
+  <strong>Bluffing:</strong>
+  <%= @game.bluffing %>
+</p>
+
+<p>
+  <strong>Quick set up:</strong>
+  <%= @game.quick_set_up %>
+</p>
+
+<p>
+  <strong>Secret info:</strong>
+  <%= @game.secret_info %>
+</p>
+
+<p>
+  <strong>Chance:</strong>
+  <%= @game.chance %>
+</p>
+
+<p>
+  <strong>Card based:</strong>
+  <%= @game.card_based %>
+</p>
+
+<p>
+  <strong>Two player:</strong>
+  <%= @game.two_player %>
+</p>
+
+<p>
+  <strong>Theme:</strong>
+  <%= @game.theme %>
+</p>
+
+<p>
+  <strong>Heavy reading:</strong>
+  <%= @game.heavy_reading %>
+</p>
+
+<p>
+  <strong>Kid friendly:</strong>
+  <%= @game.kid_friendly %>
+</p>
+
+<p>
+  <strong>Requires acting:</strong>
+  <%= @game.requires_acting %>
+</p>
+
+<p>
+  <strong>Random starting state:</strong>
+  <%= @game.random_starting_state %>
+</p>
+
+<p>
+  <strong>Asymmetric:</strong>
+  <%= @game.asymmetric %>
+</p>
+
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>

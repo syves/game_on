@@ -1,0 +1,73 @@
+<%= form_for(@game) do |f| %>
+  <% if @game.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@game.errors.count, "error") %> prohibited this game from being saved:</h2>
+
+      <ul>
+      <% @game.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :player_interaction %><br>
+    <%= f.text_field :player_interaction %>
+  </div>
+  <div class="field">
+    <%= f.label :bluffing %><br>
+    <%= f.text_field :bluffing %>
+  </div>
+  <div class="field">
+    <%= f.label :quick_set_up %><br>
+    <%= f.text_field :quick_set_up %>
+  </div>
+  <div class="field">
+    <%= f.label :secret_info %><br>
+    <%= f.text_field :secret_info %>
+  </div>
+  <div class="field">
+    <%= f.label :chance %><br>
+    <%= f.text_field :chance %>
+  </div>
+  <div class="field">
+    <%= f.label :card_based %><br>
+    <%= f.text_field :card_based %>
+  </div>
+  <div class="field">
+    <%= f.label :two_player %><br>
+    <%= f.text_field :two_player %>
+  </div>
+  <div class="field">
+    <%= f.label :theme %><br>
+    <%= f.text_field :theme %>
+  </div>
+  <div class="field">
+    <%= f.label :heavy_reading %><br>
+    <%= f.text_field :heavy_reading %>
+  </div>
+  <div class="field">
+    <%= f.label :kid_friendly %><br>
+    <%= f.text_field :kid_friendly %>
+  </div>
+  <div class="field">
+    <%= f.label :requires_acting %><br>
+    <%= f.text_field :requires_acting %>
+  </div>
+  <div class="field">
+    <%= f.label :random_starting_state %><br>
+    <%= f.text_field :random_starting_state %>
+  </div>
+  <div class="field">
+    <%= f.label :asymmetric %><br>
+    <%= f.text_field :asymmetric %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

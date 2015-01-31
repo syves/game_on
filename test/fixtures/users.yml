@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_name: MyString
+  email: MyString
+  player_interaction: MyString
+  bluffing: MyString
+  quick_set_up: MyString
+  secret_info: MyString
+  chance: MyString
+  card_based: MyString
+  two_player: MyString
+  theme: MyString
+  heavy_reading: MyString
+  kid_friendly: MyString
+  requires_acting: MyString
+  random_starting_state: MyString
+  asymmetric: MyString
+
+two:
+  user_name: MyString
+  email: MyString
+  player_interaction: MyString
+  bluffing: MyString
+  quick_set_up: MyString
+  secret_info: MyString
+  chance: MyString
+  card_based: MyString
+  two_player: MyString
+  theme: MyString
+  heavy_reading: MyString
+  kid_friendly: MyString
+  requires_acting: MyString
+  random_starting_state: MyString
+  asymmetric: MyString
