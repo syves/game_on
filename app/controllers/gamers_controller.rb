@@ -1,5 +1,5 @@
 class GamersController < ApplicationController
-  before_action :authenticate_user!,
+  before_action :authenticate_gamer!,
   :set_gamer, only: [:show, :edit, :update, :destroy]
 
   # GET /gamers
