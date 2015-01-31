@@ -47,7 +47,7 @@ Rails.application.configure do
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
 #________________________________________
-  config.action_mailer.default_url_options = { host: game-on-tonight.herokuapp.com}
+  config.action_mailer.default_url_options = { host: "http://game-on-tonight.herokuapp.com"}
 
   config.log_level = :debug
 
