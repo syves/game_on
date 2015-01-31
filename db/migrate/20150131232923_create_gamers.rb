@@ -1,8 +1,7 @@
-class CreateUsers < ActiveRecord::Migration
+class CreateGamers < ActiveRecord::Migration
   def change
-    create_table :users do |t|
+    create_table :gamers do |t|
       t.string :user_name
-      t.string :email
       t.string :player_interaction
       t.string :bluffing
       t.string :quick_set_up

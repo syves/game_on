@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Gamers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User name</th>
+      <th>Player interaction</th>
+      <th>Bluffing</th>
+      <th>Quick set up</th>
+      <th>Secret info</th>
+      <th>Chance</th>
+      <th>Card based</th>
+      <th>Two player</th>
+      <th>Theme</th>
+      <th>Heavy reading</th>
+      <th>Kid friendly</th>
+      <th>Requires acting</th>
+      <th>Random starting state</th>
+      <th>Asymmetric</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gamers.each do |gamer| %>
+      <tr>
+        <td><%= gamer.user_name %></td>
+        <td><%= gamer.player_interaction %></td>
+        <td><%= gamer.bluffing %></td>
+        <td><%= gamer.quick_set_up %></td>
+        <td><%= gamer.secret_info %></td>
+        <td><%= gamer.chance %></td>
+        <td><%= gamer.card_based %></td>
+        <td><%= gamer.two_player %></td>
+        <td><%= gamer.theme %></td>
+        <td><%= gamer.heavy_reading %></td>
+        <td><%= gamer.kid_friendly %></td>
+        <td><%= gamer.requires_acting %></td>
+        <td><%= gamer.random_starting_state %></td>
+        <td><%= gamer.asymmetric %></td>
+        <td><%= link_to 'Show', gamer %></td>
+        <td><%= link_to 'Edit', edit_gamer_path(gamer) %></td>
+        <td><%= link_to 'Destroy', gamer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gamer', new_gamer_path %>
