@@ -63,25 +63,4 @@ ActiveRecord::Schema.define(version: 20150131233018) do
     t.datetime "created_at",            null: false
     t.datetime "updated_at",            null: false
   end
-
-  create_table "users", force: :cascade do |t|
-    t.string   "user_name"
-    t.string   "email"
-    t.string   "player_interaction"
-    t.string   "bluffing"
-    t.string   "quick_set_up"
-    t.string   "secret_info"
-    t.string   "chance"
-    t.string   "card_based"
-    t.string   "two_player"
-    t.string   "theme"
-    t.string   "heavy_reading"
-    t.string   "kid_friendly"
-    t.string   "requires_acting"
-    t.string   "random_starting_state"
-    t.string   "asymmetric"
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
-  end
-
 end
