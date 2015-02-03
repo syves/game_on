@@ -7,10 +7,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
-  <h1>Welcome to GameOn</h1>
-  <h3>Find Board games based on your preferences</h3>
+
   <% if gamer_signed_in? %>
   <li>
     <%= link_to('Log Out', destroy_gamer_session_path, :method => :delete) %>
@@ -19,7 +17,16 @@
   <li>
     <%= link_to('Login', new_gamer_session_path) %>
   </li>
+    <li>
+    <%= link_to('Sign Up', new_gamer_registration_path) %>
+  </li>
   <% end %>
+  <p id="notice"><%= notice %></p>
+
+</br>
+  <h1>Welcome to GameOn</h1>
+  <h3>Find Board games based on your preferences</h3>
+
 
 <%= yield %>
 
