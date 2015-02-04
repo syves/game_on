@@ -1,5 +1,15 @@
 
+<% if gamer_signed_in? %>
+  <li>
+  <%= link_to 'Add Game Preferences', edit_gamer_path(@gamer) %>
+  </li>
+  <!-- create custom link to get games_for_you or partial?-->
+#add your_games code here
+<%= get_gamer_prefs(current_gamer) %>
+<%= get_game_chars(games) %>
 
+ <% end %>
+</br>
 <h1>Listing Games</h1>
 
 <table>
@@ -49,5 +59,12 @@
 </table>
 
 <br>
-
-<%= link_to 'New Game', new_game_path %>
+<li>
+<%= link_to 'Add a Game', new_game_path %>
+</li>
+<li>
+<%= link_to 'See all the gamers', gamers_path %>
+</li>
+<li>
+<%= link_to 'Choose a game for a group', gamers_path %>
+</li>

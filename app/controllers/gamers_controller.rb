@@ -5,6 +5,7 @@ class GamersController < ApplicationController
   # GET /gamers.json
   def index
     @gamers = Gamer.all
+    @games = Game.all
   end
 
   # GET /gamers/1
@@ -19,6 +20,7 @@ class GamersController < ApplicationController
 
   # GET /gamers/1/edit
   def edit
+    @gamer = Gamer.find(params[:id])
   end
 
   # POST /gamers

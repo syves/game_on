@@ -5,6 +5,9 @@ class GamesController < ApplicationController
   # GET /games.json
   def index
     @games = Game.all
+    @gamer = current_gamer
+    #@your_games = your_games()
+    #p get_gamer_prefs()
   end
 
   # GET /games/1
