@@ -1,3 +1,40 @@
 // Place all the styles related to the gamers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+  width: 100%;
+}
+#content {
+  margin:150px 30px;
+}
+h1 {
+  /*border: 2px solid #cedcf6;*/
+background-color: #cedcf6;
+height:60px;
+width:550px;
+padding:15px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border: 0px solid #CEDCF6;
+}
+h2 {
+  /*border: 2px solid #cedcf6;*/
+background-color: #cedcf6;
+height: 20px;
+width: 400px;
+padding: 15px 15px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border: 0px solid #CEDCF6;
+}
+
+h3 {
+  border: 2px solid #cedcf6;
+  /*background-color: #cedcf6;*/
+}
+h4 {
+  border: 2px solid #cedcf6;
+  /*background-color: #cedcf6;*/
+}

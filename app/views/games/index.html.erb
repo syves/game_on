@@ -1,71 +1,69 @@
-
-<% if gamer_signed_in? %>
-  <li>
-  <%= link_to 'Add Game Preferences', edit_gamer_path(@gamer) %>
-  </li>
-  <!-- create custom link to get games_for_you or partial?-->
-<h2>Games based on your preferences</h2>
-<% get_your_games(current_gamer).each do |x| %>
- <li><strong>Name: </strong><%= x[0] %>,<strong>Score: </strong><%= x[1]%></li>
-<% end %>
-
- <% end %>
-</br>
-<h1>Games | Characteristics</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Player interaction</th>
-      <th>Bluffing</th>
-      <th>Quick set up</th>
-      <th>Secret info</th>
-      <th>Chance</th>
-      <th>Card based</th>
-      <th>Two player</th>
-      <th>Theme</th>
-      <th>Heavy reading</th>
-      <th>Kid friendly</th>
-      <th>Requires acting</th>
-      <th>Random starting state</th>
-      <th>Asymmetric</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @games.each do |game| %>
-      <tr>
-        <td><%= game.name %></td>
-        <td><%= game.player_interaction %></td>
-        <td><%= game.bluffing %></td>
-        <td><%= game.quick_set_up %></td>
-        <td><%= game.secret_info %></td>
-        <td><%= game.chance %></td>
-        <td><%= game.card_based %></td>
-        <td><%= game.two_player %></td>
-        <td><%= game.theme %></td>
-        <td><%= game.heavy_reading %></td>
-        <td><%= game.kid_friendly %></td>
-        <td><%= game.requires_acting %></td>
-        <td><%= game.random_starting_state %></td>
-        <td><%= game.asymmetric %></td>
-        <td><%= link_to 'Show', game %></td>
-        <td><%= link_to 'Edit', edit_game_path(game) %></td>
-        <td><%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+<div id='content'
+  <% if gamer_signed_in? %>
+    <li>
+      <%= link_to 'Add Game Preferences', edit_gamer_path(@gamer) %>
+    </li>
+    <h2>Games based on your preferences</h2>
+    <% get_your_games(current_gamer).each do |x| %>
+     <li><strong>Name: </strong><%= x[0] %>,<strong>Score: </strong><%= x[1]%></li>
     <% end %>
-  </tbody>
-</table>
+   <% end %>
+  </br>
 
-<br>
-<li>
-<%= link_to 'Add a Game', new_game_path %>
-</li>
-<li>
-<%= link_to 'See all the gamers', gamers_path %>
-</li>
-<li>
-<%= link_to 'Choose a game for a group', gamers_path %>
-</li>
+  <h1>Games Characteristics</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Player interaction</th>
+        <th>Bluffing</th>
+        <th>Quick set up</th>
+        <th>Secret info</th>
+        <th>Chance</th>
+        <th>Card based</th>
+        <th>Two player</th>
+        <th>Theme</th>
+        <th>Heavy reading</th>
+        <th>Kid friendly</th>
+        <th>Requires acting</th>
+        <th>Random starting state</th>
+        <th>Asymmetric</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @games.each do |game| %>
+        <tr>
+          <td><strong><%= game.name %></strong></td>
+          <td><%= game.player_interaction %></td>
+          <td><%= game.bluffing %></td>
+          <td><%= game.quick_set_up %></td>
+          <td><%= game.secret_info %></td>
+          <td><%= game.chance %></td>
+          <td><%= game.card_based %></td>
+          <td><%= game.two_player %></td>
+          <td><%= game.theme %></td>
+          <td><%= game.heavy_reading %></td>
+          <td><%= game.kid_friendly %></td>
+          <td><%= game.requires_acting %></td>
+          <td><%= game.random_starting_state %></td>
+          <td><%= game.asymmetric %></td>
+          <td><%= link_to 'Show', game %></td>
+          <td><%= link_to 'Edit', edit_game_path(game) %></td>
+          <td><%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <li>
+  <%= link_to 'See all the gamers', gamers_path %>
+  </li>
+  <li>
+  <%= link_to 'Choose a game for a group', gamers_path %>
+  </li>
+</div>

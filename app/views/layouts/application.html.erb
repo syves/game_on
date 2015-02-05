@@ -3,32 +3,44 @@
 <head>
   <title>GameOn</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
 </head>
 <body>
   <p class="alert"><%= alert %></p>
+<div id="header">
+<h1>Welcome to GameOn</h1>
+<h3>
+  <em>Find Board games based on your preferences</em>
+</h3>
+
+<ul id='nav'>
+  <li>
+    <%= link_to 'Add a Game', new_game_path %>
+  </li>
 
   <% if gamer_signed_in? %>
-  <li>
-    <%= link_to('Log Out', destroy_gamer_session_path, :method => :delete) %>
-  </li>
-  <% else %>
-  <li>
-    <%= link_to('Login', new_gamer_session_path) %>
-  </li>
+
     <li>
-    <%= link_to('Sign Up', new_gamer_registration_path) %>
-  </li>
-  <% end %>
-  <p id="notice"><%= notice %></p>
+      <%= link_to('Log Out', destroy_gamer_session_path, :method => :delete) %>
+    </li>
+    <% else %>
+    <li>
+      <%= link_to('Login', new_gamer_session_path) %>
+    </li>
+      <li>
+      <%= link_to('Sign Up', new_gamer_registration_path) %>
+    </li>
+    <% end %>
+    </br>
 
+ </ul>
+ </div>
 </br>
-  <h1>Welcome to GameOn</h1>
-  <h3>Find Board games based on your preferences</h3>
-</br>
 
-
+ <p id="notice"><%= notice %></p>
 
 <%= yield %>
 
