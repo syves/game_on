@@ -13,6 +13,7 @@ class GamesController < ApplicationController
   # GET /games/1
   # GET /games/1.json
   def show
+    redirect_to games_url
   end
 
   # GET /games/new

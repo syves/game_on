@@ -14,7 +14,7 @@
  *= require_self
  */
  body {
-  margin: 0 30px;
+  margin: 0px 30px;
   background-color: white;
   color: #000c6b;
   font-family: 'Montserrat', sans-serif;
@@ -107,8 +107,6 @@ h4 {
   border: 2px solid #cedcf6;
   /*background-color: #cedcf6;*/
 }
-
-
 
 input.text-field {
   background-color: white;
