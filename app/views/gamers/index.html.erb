@@ -1,6 +1,4 @@
-<div id='content'
-
-  <p id="notice"><%= notice %></p>
+<div id='gamers-content'>
 
   <h1>Gamer ratings of characteristics</h1>
   <table>
@@ -20,7 +18,7 @@
         <th>Requires acting</th>
         <th>Random starting state</th>
         <th>Asymmetric</th>
-        <th colspan="3"></th>
+
       </tr>
     </thead>
 
@@ -41,18 +39,11 @@
           <td><%= gamer.requires_acting %></td>
           <td><%= gamer.random_starting_state %></td>
           <td><%= gamer.asymmetric %></td>
-          <td><%= link_to 'Show', gamer %></td>
-          <td><%= link_to 'Edit', edit_gamer_path(gamer) %></td>
-          <td><%= link_to 'Destroy', gamer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
     </tbody>
   </table>
 
-  <br>
-  <li>
-      <%= link_to('Home', games_path) %>
-    </li>
 </div>
 
 

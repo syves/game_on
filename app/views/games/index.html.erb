@@ -47,7 +47,7 @@
         <th>Requires acting</th>
         <th>Random starting state</th>
         <th>Asymmetric</th>
-        <th colspan="3"></th>
+        <th colspan="1">edit game</th>
       </tr>
     </thead>
 
@@ -68,9 +68,7 @@
           <td><%= game.requires_acting %></td>
           <td><%= game.random_starting_state %></td>
           <td><%= game.asymmetric %></td>
-          <td><%= link_to 'Show', game %></td>
           <td><%= link_to 'Edit', edit_game_path(game) %></td>
-          <td><%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
     </tbody>

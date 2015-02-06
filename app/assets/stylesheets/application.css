@@ -14,7 +14,6 @@
  *= require_self
  */
  body {
-  height
   margin: 0 30px;
   background-color: white;
   color: #000c6b;
@@ -22,6 +21,9 @@
   font-size: 13px;
   line-height: 18px;
   background-image: url("./backgammon-precision-dice-blue_primary.jpg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
 }
 input.label {
   font-size: 50px;
@@ -73,7 +75,6 @@ p, ol, ul, td {
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   line-height: 18px;
-  #width: 500px;
   background-color: #cedcf6;
   border-radius: 5px;
 -moz-border-radius: 5px;
@@ -108,34 +109,34 @@ h4 {
 }
 
 
+
+input.text-field {
+  background-color: white;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 2px solid #cedcf6;
+}
+
+/*Images*/
+#form-container {
+  margin-left:60px;
+}
+#sign-up-container {
+  margin-left:60px;
+}
+#password-container {
+  margin-left:60px;
+}
+#confirm-cont {
+  margin-left:60px;
+}
+
 pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px;
-}
-
-a {
-  text-decoration: none;
-  color: #036dda;
-  margin-right: 20px;
-
-  &:visited {
-    color: #036dda;
-  }
-  &:hover {
-    color: #fff;
-    background-color: #000;
-  }
-}
-
-div {
-  &.field, &.actions {
-    margin-bottom: 10px;
-  }
-}
-
-#notice {
-  color: #036dda;
 }
 
 .field_with_errors {
@@ -148,7 +149,6 @@ div {
 
 #error_explanation {
   width: 450px;
-  #border: 2px solid #caf4ff;
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;
@@ -179,26 +179,12 @@ div {
   li {
     list-style: none;
   }
-}
-input.text-field {
-  background-color: white;
-  margin-top: 5px;
-  margin-bottom: 8px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border: 2px solid #cedcf6;
+a {
+  text-decoration: none;
+  color: #036dda;
+  margin-right: 20px;
 }
 
-/*Images*/
-#form-container {
-  margin-left:60px;
-}
-#sign-up-container {
-  margin-left:60px;
-}
-#password-container {
-  margin-left:60px;
-}
-#confirm-cont {
-  margin-left:60px;
+#notice {
+  color: #036dda;
 }

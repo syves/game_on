@@ -12,6 +12,7 @@ class GamersController < ApplicationController
   # GET /gamers/1
   # GET /gamers/1.json
   def show
+     redirect_to gamers_url
   end
 
   # GET /gamers/new
@@ -22,6 +23,7 @@ class GamersController < ApplicationController
   # GET /gamers/1/edit
   def edit
     @gamer = Gamer.find(params[:id])
+    #redirect_to gamers_url
   end
 
   # POST /gamers
@@ -31,6 +33,7 @@ class GamersController < ApplicationController
 
     respond_to do |format|
       if @gamer.save
+
         format.html { redirect_to @gamer, notice: 'Gamer was successfully created.' }
         format.json { render :show, status: :created, location: @gamer }
       else
