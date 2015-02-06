@@ -16,8 +16,14 @@
 
   <em><p id='slogan'>find boardgames based on your likes</p></em>
 
-  <div id='nav-containeer'>
+  <div id='nav-container'>
     <ul id='nav-links'>
+      <li>
+        <%= link_to 'Game for group', gamers_path %>
+      </li>
+      <li>
+        <%= link_to 'Gamers', gamers_path %>
+      </li>
       <li>
         <%= link_to 'Add a Game', new_game_path %>
       </li>

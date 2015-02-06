@@ -16,8 +16,7 @@
  body {
   height
   margin: 0 30px;
-  padding:;
-  background-color: #white;
+  background-color: white;
   color: #000c6b;
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
@@ -42,20 +41,21 @@ input.label {
   padding-top: 0px;
 }
 
-#nav-conatiner {
-  width:400px;
+#nav-container {
+  position: absolute;
+  bottom: 0;
+  right:30px;
 }
 #nav-links li {
   display: inline;
-  background-color: red;
   padding-left: 0;
   width: 400px;
   margin-left: 0px;
 }
 
 #header {
+  position: relative; /*bounding box */
   background-color: #cedcf6;
-  width:100%;
   height: 120px;
   padding:10px 10px;
   -moz-border-radius: 5px;
@@ -188,7 +188,6 @@ input.text-field {
   -webkit-border-radius: 5px;
   border: 2px solid #cedcf6;
 }
-
 
 /*Images*/
 #form-container {
