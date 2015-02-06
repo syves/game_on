@@ -24,6 +24,9 @@
   line-height: 18px;
   background-image: url("./backgammon-precision-dice-blue_primary.jpg");
 }
+input.label {
+  font-size: 50px;
+}
 #welcome {
   font-size: 55px;
   padding: 15px;
@@ -70,7 +73,7 @@ p, ol, ul, td {
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   line-height: 18px;
-  width: 500px;
+  #width: 500px;
   background-color: #cedcf6;
   border-radius: 5px;
 -moz-border-radius: 5px;
@@ -132,22 +135,27 @@ div {
 }
 
 #notice {
-  color: green;
+  color: #036dda;
 }
 
 .field_with_errors {
   padding: 2px;
-  background-color: red;
+  background-color: #caf4ff;
   display: table;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
 
 #error_explanation {
   width: 450px;
-  border: 2px solid #cedcf6;
+  #border: 2px solid #caf4ff;
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;
-  background-color: #f0f0f0;
+  background-color: #caf4ff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
   h2 {
     text-align: left;
     font-weight: bold;
@@ -172,5 +180,26 @@ div {
     list-style: none;
   }
 }
+input.text-field {
+  background-color: white;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 2px solid #cedcf6;
+}
+
 
 /*Images*/
+#form-container {
+  margin-left:60px;
+}
+#sign-up-container {
+  margin-left:60px;
+}
+#password-container {
+  margin-left:60px;
+}
+#confirm-cont {
+  margin-left:60px;
+}

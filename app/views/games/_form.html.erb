@@ -1,74 +1,76 @@
-<%= form_for(@game) do |f| %>
-  <% if @game.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@game.errors.count, "error") %> prohibited this game from being saved:</h2>
+<div id='form-container'>
+  <%= form_for(@game) do |f| %>
+    <% if @game.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@game.errors.count, "error") %> prohibited this game from being saved:</h2>
 
-      <ul>
-      <% @game.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+        <ul>
+        <% @game.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :name, :class => 'label' %><br>
+      <%= f.text_field :name, :placeholder => 'Name',:class => 'text-field' %>
+    </div>
+    <h3>Game Characteristics</h3>
+    <div class="field">
+      <%= f.label :player_interaction, :class => 'label' %><br>
+      <%= f.text_field :player_interaction, :placeholder => 'Enter true or false', :class => 'text-field' %>
+    </div>
+    <div class="field">
+      <%= f.label :bluffing, :class => 'label' %><br>
+      <%= f.text_field :bluffing, :placeholder => 'Enter true or false', :class => 'text-field' %>
+    </div>
+    <div class="field">
+      <%= f.label :quick_set_up, :class => 'label' %><br>
+      <%= f.text_field :quick_set_up, :placeholder => 'Enter true or false', :class => 'text-field' %>
+    </div>
+    <div class="field">
+      <%= f.label :secret_info, :class => 'label' %><br>
+      <%= f.text_field :secret_info, :placeholder => 'Enter true or false', :class => 'text-field' %>
+    </div>
+    <div class="field">
+      <%= f.label :chance, :class => 'label' %><br>
+      <%= f.text_field :chance, :placeholder => 'Enter true or false', :class => 'text-field' %>
+    </div>
+    <div class="field">
+      <%= f.label :card_based, :class => 'label' %><br>
+      <%= f.text_field :card_based, :placeholder => 'Enter true or false', :class => 'text-field' %>
+    </div>
+    <div class="field">
+      <%= f.label :two_player, :class => 'label' %><br>
+      <%= f.text_field :two_player, :placeholder => 'Enter true or false', :class => 'text-field' %>
+    </div>
+    <div class="field">
+      <%= f.label :theme, :class => 'label' %><br>
+      <%= f.text_field :theme, :placeholder => 'Enter true or false', :class => 'text-field' %>
+    </div>
+    <div class="field">
+      <%= f.label :heavy_reading, :class => 'label' %><br>
+      <%= f.text_field :heavy_reading, :placeholder => 'Enter true or false', :class => 'text-field' %>
+    </div>
+    <div class="field">
+      <%= f.label :kid_friendly, :class => 'label' %><br>
+      <%= f.text_field :kid_friendly, :placeholder => 'Enter true or false', :class => 'text-field' %>
+    </div>
+    <div class="field">
+      <%= f.label :requires_acting, :class => 'label' %><br>
+      <%= f.text_field :requires_acting, :placeholder => 'Enter true or false', :class => 'text-field' %>
+    </div>
+    <div class="field">
+      <%= f.label :random_starting_state, :class => 'label' %><br>
+      <%= f.text_field :random_starting_state , :placeholder => 'Enter true or false', :class => 'text-field' %>
+    </div>
+    <div class="field">
+      <%= f.label :asymmetric, :class => 'label' %><br>
+      <%= f.text_field :asymmetric, :placeholder => 'Enter true or false', :class => 'text-field' %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <h3>Game Characteristics</h3>
-  <div class="field">
-    <%= f.label :player_interaction %><br>
-    <%= f.text_field :player_interaction, :placeholder => 'Enter true or false' %>
-  </div>
-  <div class="field">
-    <%= f.label :bluffing %><br>
-    <%= f.text_field :bluffing, :placeholder => 'Enter true or false'%>
-  </div>
-  <div class="field">
-    <%= f.label :quick_set_up %><br>
-    <%= f.text_field :quick_set_up, :placeholder => 'Enter true or false'%>
-  </div>
-  <div class="field">
-    <%= f.label :secret_info %><br>
-    <%= f.text_field :secret_info, :placeholder => 'Enter true or false' %>
-  </div>
-  <div class="field">
-    <%= f.label :chance %><br>
-    <%= f.text_field :chance, :placeholder => 'Enter true or false' %>
-  </div>
-  <div class="field">
-    <%= f.label :card_based %><br>
-    <%= f.text_field :card_based, :placeholder => 'Enter true or false' %>
-  </div>
-  <div class="field">
-    <%= f.label :two_player %><br>
-    <%= f.text_field :two_player, :placeholder => 'Enter true or false' %>
-  </div>
-  <div class="field">
-    <%= f.label :theme %><br>
-    <%= f.text_field :theme, :placeholder => 'Enter true or false' %>
-  </div>
-  <div class="field">
-    <%= f.label :heavy_reading %><br>
-    <%= f.text_field :heavy_reading, :placeholder => 'Enter true or false' %>
-  </div>
-  <div class="field">
-    <%= f.label :kid_friendly %><br>
-    <%= f.text_field :kid_friendly, :placeholder => 'Enter true or false' %>
-  </div>
-  <div class="field">
-    <%= f.label :requires_acting %><br>
-    <%= f.text_field :requires_acting, :placeholder => 'Enter true or false' %>
-  </div>
-  <div class="field">
-    <%= f.label :random_starting_state %><br>
-    <%= f.text_field :random_starting_state , :placeholder => 'Enter true or false' %>
-  </div>
-  <div class="field">
-    <%= f.label :asymmetric %><br>
-    <%= f.text_field :asymmetric, :placeholder => 'Enter true or false' %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</div>
