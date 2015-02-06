@@ -25,15 +25,15 @@
   background-image: url("./backgammon-precision-dice-blue_primary.jpg");
 }
 #welcome {
-  font-size: 65px;
+  font-size: 55px;
   padding: 15px;
   margin-top: 10px;
   margin-bottom: 0px;
-  margin-left:590px;
+  margin-left:390px;
 }
 #brand {
-  font-size: 90px;
-  margin-left:120px;
+  font-size: 75px;
+  margin-left:80px;
   margin-top: 0px;
   margin-bottom:0px;
   padding-top: 0px;
@@ -62,7 +62,7 @@
 #slogan {
  margin-top: 35px;
  width: 750px;
- font-size: 27px;
+ font-size: 20px;
  color: #036dda;
 }
 

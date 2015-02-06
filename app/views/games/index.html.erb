@@ -1,8 +1,13 @@
-<div id='content'
-  <% if gamer_signed_in? %>
+<div id='games-header'>
+   <% if gamer_signed_in? %>
     <li>
       <%= link_to 'Add Game Preferences', edit_gamer_path(@gamer) %>
     </li>
+    <% end %>
+  </div>
+
+<div id='content'>
+  <% if gamer_signed_in? %>
   <div id='my-games'>
     <h1 id='pref-h1'>Games for you!</h1>
     <table>
@@ -76,11 +81,14 @@
   </table>
 
   <br>
-
+<div id='footer-links'>
+<ul id='games-footer'>
   <li>
-  <%= link_to 'See all the gamers', gamers_path %>
+    <%= link_to 'See all the gamers', gamers_path %>
   </li>
   <li>
-  <%= link_to 'Choose a game for a group', gamers_path %>
+    <%= link_to 'Choose a game for a group', gamers_path %>
   </li>
+<ul>
+</div>
 </div>

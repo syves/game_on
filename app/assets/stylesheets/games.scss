@@ -42,16 +42,11 @@ h4 {
   /*background-color: #cedcf6;*/
 }
 //#caf4ff
-/*#my-games {
-    font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  background-color: #caf4ff;
-  border-radius: 5px;
--moz-border-radius: 5px;
--webkit-border-radius: 5px;
-border: 0px solid #CEDCF6;
-}*/
+
+#games-footer li {
+  style:inline;
+  text-decoration: none;
+}
 
 #my-games p, ol, ul, td {
   font-family: 'Montserrat', sans-serif;
