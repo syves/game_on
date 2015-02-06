@@ -15,6 +15,7 @@ group :production do
   #gem 'rails_12factor'
 end
 
+#gem 'normalize-rails'
 gem 'google-webfonts'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

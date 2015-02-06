@@ -3,11 +3,28 @@
     <li>
       <%= link_to 'Add Game Preferences', edit_gamer_path(@gamer) %>
     </li>
-    <h2>Games based on your preferences</h2>
+  <div id='my-games'>
+    <h1 id='pref-h1'>Games for you!</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Score</th>
+        </tr>
+      </thread>
+    </table>
+
+    <tbody>
     <% get_your_games(current_gamer).each do |x| %>
-     <li><strong>Name: </strong><%= x[0] %>,<strong>Score: </strong><%= x[1]%></li>
+      <tr>
+        <td><strong> <%= x[0] %> </strong></td>
+        <td><strong> <%= x[1] %> </strong></td>
+      </br>
     <% end %>
+      </tr>
+  </tbody>
    <% end %>
+ </div>
   </br>
 
   <h1>Games Characteristics</h1>

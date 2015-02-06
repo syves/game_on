@@ -11,33 +11,34 @@
 <body>
   <p class="alert"><%= alert %></p>
 <div id="header">
-<h1>Welcome to GameOn</h1>
-<h3>
-  <em>Find Board games based on your preferences</em>
-</h3>
+  <p id='welcome'>Welcome to</p>
+  <p id='brand'>GameOn</p>
 
-<ul id='nav'>
-  <li>
-    <%= link_to 'Add a Game', new_game_path %>
-  </li>
+  <em><p id='slogan'>Find Board games based on your preferences</p></em>
 
-  <% if gamer_signed_in? %>
-
-    <li>
-      <%= link_to('Log Out', destroy_gamer_session_path, :method => :delete) %>
-    </li>
-    <% else %>
-    <li>
-      <%= link_to('Login', new_gamer_session_path) %>
-    </li>
+  <div id='nav-containeer'>
+    <ul id='nav-links'>
       <li>
-      <%= link_to('Sign Up', new_gamer_registration_path) %>
-    </li>
-    <% end %>
-    </br>
+        <%= link_to 'Add a Game', new_game_path %>
+      </li>
 
- </ul>
- </div>
+      <% if gamer_signed_in? %>
+        <li>
+          <%= link_to('Log Out', destroy_gamer_session_path, :method => :delete) %>
+        </li>
+      <% else %>
+        <li>
+          <%= link_to('Login', new_gamer_session_path) %>
+        </li>
+        <li>
+          <%= link_to('Sign Up', new_gamer_registration_path) %>
+        </li>
+      <% end %>
+        </br>
+     </ul>
+   </div> <!--closes nav-->
+
+ </div> <!--close header-->
 </br>
 
  <p id="notice"><%= notice %></p>

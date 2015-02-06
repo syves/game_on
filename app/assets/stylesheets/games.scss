@@ -8,6 +8,7 @@ body{
 #content {
   margin:150px 30px;
 }
+
 h1 {
   /*border: 2px solid #cedcf6;*/
 background-color: #cedcf6;
@@ -19,6 +20,7 @@ border-radius: 5px;
 -webkit-border-radius: 5px;
 border: 0px solid #CEDCF6;
 }
+
 h2 {
   /*border: 2px solid #cedcf6;*/
 background-color: #cedcf6;
@@ -38,4 +40,38 @@ h3 {
 h4 {
   border: 2px solid #cedcf6;
   /*background-color: #cedcf6;*/
+}
+//#caf4ff
+/*#my-games {
+    font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: #caf4ff;
+  border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border: 0px solid #CEDCF6;
+}*/
+
+#my-games p, ol, ul, td {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: #cedcf6;
+  border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border: 0px solid #cedcf6;
+}
+#my-games th {
+  background-color: white;
+  border: 2px solid #caf4ff;
+  border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border: 2px solid #caf4ff;
+}
+#pref-h1 {
+  background-color: #caf4ff;
+  width:200px;
 }
