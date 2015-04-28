@@ -21,10 +21,12 @@ end
   [["hanabi", [{"player_interaction"=>true}, {"bluffing"=>false}, {"quick_set_up"=>true}, {"secret_info"=>true}, {"chance"=>true}, {"card_based"=>true}, {"two_player"=>true}, {"theme"=>false}, {"heavy_reading"=>false}, {"kid_friendly"=>false}, {"requires_acting"=>false}, {"random_starting_state"=>true}, {"asymmetric"=>false}]], ["mushrooms", [{"player_interaction"=>false}, {"bluffing"=>false}, {"quick_set_up"=>true}, {"secret_info"=>true}, {"chance"=>true}, {"card_based"=>true}, {"two_player"=>true}, {"theme"=>true}, {"heavy_reading"=>false}, {"kid_friendly"=>false}, {"requires_acting"=>false}, {"random_starting_state"=>true}, {"asymmetric"=>false}]], ["king of tokyo", [{"player_interaction"=>true}, {"bluffing"=>false}, {"quick_set_up"=>true}, {"secret_info"=>true}, {"chance"=>true}, {"card_based"=>true}, {"two_player"=>false}, {"theme"=>true}, {"heavy_reading"=>false}, {"kid_friendly"=>true}, {"requires_acting"=>false}, {"random_starting_state"=>false}, {"asymmetric"=>false}]], ["7 wonders", [{"player_interaction"=>false}, {"bluffing"=>false}, {"quick_set_up"=>true}, {"secret_info"=>false}, {"chance"=>false}, {"card_based"=>true}, {"two_player"=>false}, {"theme"=>true}, {"heavy_reading"=>true}, {"kid_friendly"=>false}, {"requires_acting"=>false}, {"random_starting_state"=>false}, {"asymmetric"=>false}]]]
 =end
 def get_your_games(current_gamer) #current_gamer
+  #looping over all the games in system, hashes or properties, value T/F
+  #scoring all the games for current user..
 get_game_chars().map do |game| #=> ["",[{x,y}]]
   my_games = []
   game_score = 0
-
+    #for each game we check to see if value prop is present and if so and matters to user, then we add user ranking of property
     game.drop(1).flatten.each do |hash| #=>[{x,y},{}],
       game = [game[0]]
 
